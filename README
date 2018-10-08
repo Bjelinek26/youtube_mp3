@@ -1,0 +1,9 @@
+#This is a script that will download multiple youtube videos
+#as mp3 files (audio only)
+#the scipt will utilize youtube-dl 
+#specifically youtube-dl -x --audioformat mp3 -a [batch.sh file]
+#the script will also create a folder to dump the mp3 files into
+
+#as of now the folder will be take an argument so tab completion can be used
+
+#youtube-dl and ffmpeg are dependencies
