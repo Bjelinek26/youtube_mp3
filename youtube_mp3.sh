@@ -23,3 +23,5 @@ done
 
 youtube-dl -x --audio-format mp3 -a list.sh
 
+rm lish.sh
+
