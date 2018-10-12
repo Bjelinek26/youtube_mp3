@@ -2,9 +2,13 @@
 
 FOLD=$1
 
-mkdir $FOLD
-
-cd $FOLD
+if [ -d $FOLD ]
+then 
+	cd $FOLD
+else
+	mkdir $FOLD
+	cd $FOLD
+fi
 
 touch list.sh
 
@@ -23,5 +27,5 @@ done
 
 youtube-dl -x --audio-format mp3 -a list.sh
 
-rm lish.sh
+rm list.sh
 
